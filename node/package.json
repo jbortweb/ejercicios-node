@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "stack": "^0.1.0",
+    "yargs": "^17.4.1"
+  }
+}
