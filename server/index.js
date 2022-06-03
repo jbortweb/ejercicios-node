@@ -31,6 +31,18 @@ const server = http.createServer((req, res)=> {
         res.setHeader('Content-Type','text/plain');
         res.end('About us\n');
     }
+    else if (pathName === '/Contact'){
+        console.log(pathName);
+        res.statusCode = 200;
+        res.setHeader('Content-Type','text/plain');
+        res.end(' Jordi Bort\n jbortweb@gmail.com');
+    }
+    else {
+        console.log(pathName);
+        res.statusCode = 404;
+        res.writeHead(404);
+        res.end(http.STATUS_CODES[404]);
+    }
 });
 
 //Activamos nuestro servidor.
